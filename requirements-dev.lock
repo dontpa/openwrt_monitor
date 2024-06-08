@@ -9,6 +9,9 @@
 #   generate-hashes: false
 
 -e file:.
+apscheduler==3.10.4
+    # via django-apscheduler
+    # via new-monitor
 asgiref==3.8.1
     # via django
 certifi==2024.6.2
@@ -16,15 +19,24 @@ certifi==2024.6.2
 charset-normalizer==3.3.2
     # via requests
 django==5.0.6
+    # via django-apscheduler
     # via djangorestframework
+    # via new-monitor
+django-apscheduler==0.6.2
     # via new-monitor
 djangorestframework==3.15.1
     # via new-monitor
 idna==3.7
     # via requests
+pytz==2024.1
+    # via apscheduler
 requests==2.32.3
     # via new-monitor
+six==1.16.0
+    # via apscheduler
 sqlparse==0.5.0
     # via django
+tzlocal==5.2
+    # via apscheduler
 urllib3==2.2.1
     # via requests
