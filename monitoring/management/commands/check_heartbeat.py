@@ -1,11 +1,15 @@
 # your_app_name/management/commands/check_heartbeat.py
+import os
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 from datetime import timedelta
 import requests
 from monitoring.models import Heartbeat
+from dotenv import load_dotenv
 
-WEBHOOK_URL = '你的飞书webhook URL'
+load_dotenv()
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
+
 
 class Command(BaseCommand):
     help = "Check heartbeat and VPN status."

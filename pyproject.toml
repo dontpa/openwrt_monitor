@@ -8,6 +8,8 @@ dependencies = [
     "requests>=2.32.3",
     "apscheduler>=3.10.4",
     "django-apscheduler>=0.6.2",
+    "python-dotenv>=1.0.1",
+    "gunicorn>=22.0.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

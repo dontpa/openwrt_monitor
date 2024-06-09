@@ -26,8 +26,14 @@ django-apscheduler==0.6.2
     # via new-monitor
 djangorestframework==3.15.1
     # via new-monitor
+gunicorn==22.0.0
+    # via new-monitor
 idna==3.7
     # via requests
+packaging==24.0
+    # via gunicorn
+python-dotenv==1.0.1
+    # via new-monitor
 pytz==2024.1
     # via apscheduler
 requests==2.32.3
