@@ -35,7 +35,7 @@ def start_scheduler():
         scheduler.add_job(
             "monitoring.scheduler:check_heartbeat_job",
             "interval",
-            seconds=30,  # 调试时使用30秒，实际应用中改为hours=2.5
+            hours=2.5,  # 调试时使用30秒，实际应用中改为hours=2.5
             id="check_heartbeat",
             replace_existing=True,
         )
