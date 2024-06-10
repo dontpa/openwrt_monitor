@@ -6,7 +6,6 @@
 #   features: []
 #   all-features: false
 #   with-sources: false
-#   generate-hashes: false
 
 -e file:.
 apscheduler==3.10.4
@@ -32,6 +31,8 @@ idna==3.7
     # via requests
 packaging==24.0
     # via gunicorn
+python-decouple==3.8
+    # via new-monitor
 python-dotenv==1.0.1
     # via new-monitor
 pytz==2024.1
